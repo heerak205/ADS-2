@@ -1,22 +1,14 @@
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/Percolation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/Percolation.java:1: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.
-Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/ConnectedComponents.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/2.1 CC_Percolation/ConnectedComponents.java:1: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
