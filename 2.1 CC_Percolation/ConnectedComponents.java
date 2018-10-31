@@ -38,7 +38,7 @@ public class ConnectedComponents {
      * depth-first search for a Graph.
      *
      * @param      graph  The graph
-     * @param      v      { parameter_description }
+     * @param      v      { parameter_description }.
      */
     private void dfs(final Graph graph, final int v) {
         marked[v] = true;
@@ -58,9 +58,9 @@ public class ConnectedComponents {
      *
      * @param  v the vertex
      * @return the component id of
-     * the connected component containing vertex {@code v}
+     * the connected component containing vertex {@code v}.
      * @throws IllegalArgumentException
-     * unless {@code 0 <= v < V}
+     * unless {@code 0 <= v < V}.
      */
     public int id(final int v) {
         validateVertex(v);
@@ -73,8 +73,8 @@ public class ConnectedComponents {
      *
      * @param  v the vertex
      * @return the number of vertices
-     * in the connected component containing vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * in the connected component containing vertex {@code v}.
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}.
      */
     public int size(final int v) {
         validateVertex(v);
@@ -98,8 +98,8 @@ public class ConnectedComponents {
      * @param  w the other vertex
      * @return {@code true} if vertices {@code v} and {@code w} are in the same
      *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}.
+     * @throws IllegalArgumentException unless {@code 0 <= w < V}.
      */
     public boolean connected(final int v, final int w) {
         validateVertex(v);
@@ -115,8 +115,8 @@ public class ConnectedComponents {
      * @param  w the other vertex
      * @return {@code true} if vertices {@code v} and {@code w} are in the same
      *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}.
+     * @throws IllegalArgumentException unless {@code 0 <= w < V}.
      * @deprecated Replaced by {@link #connected(int, int)}.
      */
     @Deprecated
@@ -129,7 +129,7 @@ public class ConnectedComponents {
     /**
      * throw an IllegalArgumentException unless {@code 0 <= v < V}.
      *
-     * @param      v     { parameter_description }
+     * @param      v     { parameter_description }.
      */
     private void validateVertex(final int v) {
         int vertices = marked.length;

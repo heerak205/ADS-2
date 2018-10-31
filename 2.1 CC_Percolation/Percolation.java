@@ -36,10 +36,10 @@ class Percolation {
     /**
      * Searches for the first match.
      *
-     * @param      i     {row}
-     * @param      j     {column}
+     * @param      i     {row}.
+     * @param      j     {column}.
      *
-     * @return     {index value for 1-Dimensional Array}
+     * @return     {index value for 1-Dimensional Array}.
      */
     private int indexOf(final int i, final int j) {
         return (n * (i - 1)) + (j - 1);
@@ -104,7 +104,7 @@ class Percolation {
     /**
      * {Method to determine the number of open sites}.
      *
-     * @return     {Number of open sites}
+     * @return     {Number of open sites}.
      */
     public int numberOfOpenSites() {
         return count;
@@ -112,7 +112,7 @@ class Percolation {
     /**
      * {Method to determine does the system percolate?}.
      *
-     * @return     {Boolean value}
+     * @return     {Boolean value}.
      */
     public boolean percolates() {
         ConnectedComponents cc = new ConnectedComponents(uf);
