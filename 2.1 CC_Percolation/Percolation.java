@@ -36,8 +36,8 @@ class Percolation {
     /**
      * Searches for the first match.
      *
-     * @param      i     {row}.
-     * @param      j     {column}.
+     * @param      i     the row
+     * @param      j     the column
      *
      * @return     {index value for 1-Dimensional Array}.
      */
@@ -48,7 +48,7 @@ class Percolation {
      * Links open sites.
      *
      * @param      row   The row
-     * @param      col   The col
+     * @param      col   The column
      */
     private void linkOpenSites(final int row, final int col) {
         if (connected[col] && !uf.hasEdge(row, col)) {
@@ -59,7 +59,7 @@ class Percolation {
      * {Method to open site (row, col) if it is not open already}.
      *
      * @param      row   The row
-     * @param      col   The col
+     * @param      col   The column
      */
     public void open(final int row, final int col) {
         int index = indexOf(row, col);
