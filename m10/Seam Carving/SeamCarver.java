@@ -31,18 +31,17 @@ public class SeamCarver {
 	public double energy(int x, int y) {
 		if (x == 0 || x == wid - 1) {
 			return 1000;
-		}
-		else if (y == 0 || y == hgt - 1) {
+		} else if (y == 0 || y == hgt - 1) {
 			return 1000;
 		}
-		int redx = picture.get(x, y-1).getRed() - picture.get(x, y+1).getRed();
-		int greenx = picture.get(x, y-1).getGreen() - picture.get(x, y+1).getGreen();
-		int bluex = picture.get(x, y-1).getBlue() - picture.get(x, y+1).getBlue();
-		int redy = picture.get(x-1, y).getRed() - picture.get(x+1, y).getRed();
-		int greeny = picture.get(x-1, y).getGreen() - picture.get(x+1, y).getGreen();
-		int bluey = picture.get(x-1, y).getBlue() - picture.get(x+1, y).getBlue();
-		double column = (redx*redx) + (greenx*greenx) + (bluex*bluex);
-		double row = (redy*redy) + (greeny*greeny) + (bluey*bluey);
+		int redx = picture.get(x, y - 1).getRed() - picture.get(x, y + 1).getRed();
+		int greenx = picture.get(x, y - 1).getGreen() - picture.get(x, y + 1).getGreen();
+		int bluex = picture.get(x, y - 1).getBlue() - picture.get(x, y + 1).getBlue();
+		int redy = picture.get(x - 1, y).getRed() - picture.get(x + 1, y).getRed();
+		int greeny = picture.get(x - 1, y).getGreen() - picture.get(x + 1, y).getGreen();
+		int bluey = picture.get(x - 1, y).getBlue() - picture.get(x + 1, y).getBlue();
+		double column = (redx * redx) + (greenx * greenx) + (bluex * bluex);
+		double row = (redy * redy) + (greeny * greeny) + (bluey * bluey);
 		double result = Math.sqrt(column + row);
 		return result;
 	}
