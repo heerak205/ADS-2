@@ -30,7 +30,7 @@ public class Solution {
             String[] ofEdges = s.nextLine().split(" ");
             Edge edge = new Edge(Integer.parseInt(ofEdges[0]),
                                  Integer.parseInt(ofEdges[1]),
-                                  Integer.parseInt(ofEdges[2]));
+                                 Integer.parseInt(ofEdges[2]));
             ewg.addEdge(edge);
             k--;
         }
@@ -58,7 +58,7 @@ public class Solution {
         case "ViaPaths":
             // Handle the case of ViaPaths,
             // where three integers are given.
-            // First is the source and second is the via is the. 
+            // First is the source and second is the via is the.
             // one where path should pass through.
             // third is the destination.
             // If the path exists print the distance between them.
@@ -84,6 +84,5 @@ public class Solution {
         default:
             break;
         }
-
     }
 }
