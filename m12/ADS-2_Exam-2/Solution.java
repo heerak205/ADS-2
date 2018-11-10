@@ -28,7 +28,9 @@ public class Solution {
         int k = edges;
         while (k > 0) {
             String[] ofEdges = s.nextLine().split(" ");
-            Edge edge = new Edge(Integer.parseInt(ofEdges[0]),Integer.parseInt(ofEdges[1]),Integer.parseInt(ofEdges[2]));
+            Edge edge = new Edge(Integer.parseInt(ofEdges[0]),
+                Integer.parseInt(ofEdges[1]),
+                Integer.parseInt(ofEdges[2]));
             ewg.addEdge(edge);
             k--;
         }
