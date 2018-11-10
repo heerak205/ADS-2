@@ -13,7 +13,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
@@ -25,7 +25,8 @@ public class Solution {
         while (k > 0) {
             String[] ofEdges = s.nextLine().split(" ");
             Edge edge = new Edge(Integer.parseInt(ofEdges[0]),
-                                 Integer.parseInt(ofEdges[1]), Integer.parseInt(ofEdges[2]));
+                                 Integer.parseInt(ofEdges[1]),
+                                  Integer.parseInt(ofEdges[2]));
             ewg.addEdge(edge);
             k--;
         }
@@ -51,7 +52,8 @@ public class Solution {
             break;
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via is the 
+            // one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
