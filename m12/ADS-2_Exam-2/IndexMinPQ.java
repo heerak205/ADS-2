@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
  * @param      <Key>   Key.
  */
 public class IndexMinPQ<Key extends Comparable<Key>>
-implements Iterable<Integer> {
+    implements Iterable<Integer> {
     /**
      * maximum number of elements on PQ.
      */
@@ -32,7 +32,7 @@ implements Iterable<Integer> {
      * @param  max the keys
      */
     public IndexMinPQ(final int max) {
-       this.maxN = max;
+        this.maxN = max;
         n = 0;
         keys = (Key[]) new Comparable[maxN + 1];
         pq   = new int[maxN + 1];
