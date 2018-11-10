@@ -14,7 +14,6 @@ public class Solution {
     }
     /**
      * {main method that drives the program}.
-     *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
