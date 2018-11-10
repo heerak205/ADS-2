@@ -7,6 +7,7 @@ public class Solution {
      * Constructs the object.
      */
     private Solution() {
+        //empty constructor.
     }
     /**
      * {main method that drives the program}.
@@ -39,7 +40,7 @@ public class Solution {
             // Handle the case of DirectedPaths, where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
-            // Other wise print "No Path Found."
+            // Other wise print "No Path Found.".
             String[] directedPaths = s.nextLine().split(" ");
             int m = Integer.parseInt(directedPaths[0]);
             int n = Integer.parseInt(directedPaths[1]);
@@ -52,11 +53,11 @@ public class Solution {
             break;
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the 
-            // one where path should pass throuh.
+            // First is the source and second is the via is the. 
+            // one where path should pass through.
             // third is the destination.
             // If the path exists print the distance between them.
-            // Other wise print "No Path Found."
+            // Other wise print "No Path Found.".
             String[] viaPaths = s.nextLine().split(" ");
             m = Integer.parseInt(viaPaths[0]);
             int via = Integer.parseInt(viaPaths[1]);
