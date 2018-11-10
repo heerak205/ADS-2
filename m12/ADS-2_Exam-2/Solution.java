@@ -17,9 +17,9 @@ public class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        // Self loops are not allowed...
-        // Parallel Edges are allowed...
-        // Take the Graph input here...
+        // Self loops are not allowed.
+        // Parallel Edges are allowed.
+        // Take the Graph input here.
         Scanner s = new Scanner(System.in);
         int vertices = Integer.parseInt(s.nextLine());
         int edges = Integer.parseInt(s.nextLine());
