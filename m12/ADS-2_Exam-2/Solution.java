@@ -1,3 +1,6 @@
+/**
+ * {scanner import}.
+ */
 import java.util.Scanner;
 /**
  * Class for solution.
@@ -37,7 +40,8 @@ public class Solution {
             System.out.println(ewg);
             break;
         case "DirectedPaths":
-            // Handle the case of DirectedPaths, where two integers are given.
+            // Handle the case of DirectedPaths,
+            // where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found.".
@@ -52,7 +56,8 @@ public class Solution {
             }
             break;
         case "ViaPaths":
-            // Handle the case of ViaPaths, where three integers are given.
+            // Handle the case of ViaPaths,
+            // where three integers are given.
             // First is the source and second is the via is the. 
             // one where path should pass through.
             // third is the destination.
