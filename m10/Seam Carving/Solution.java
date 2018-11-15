@@ -1,40 +1,38 @@
-/**
- * Scanner import.
- */
 import java.util.Scanner;
-/**
- * Arrays import.
- */
 import java.util.Arrays;
-
 /**
- * Class for solution.
+ * { class for solution }.
  */
 public final class Solution {
-
     /**
-     * Printing Energies.
+     * Constructs the object.
+     */
+    private Solution() {
+        //unused constructor.
+    }
+    /**
+     * { print energies function }.
      *
      * @param      fileName  The file name
      */
     public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n"
-            , picture.width(), picture.height());
+        StdOut.printf("image is %d pixels wide by %d pixels high.\n",
+        picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
+            for (int col = 0; col < sc.width(); col++) {
                 StdOut.printf("%9.0f ", sc.energy(col, row));
+            }
             StdOut.println();
         }
     }
-
     /**
-     * Printing the Seam carved.
+     * { print seam function }.
      *
      * @param      carver     The carver
      * @param      seam       The seam
@@ -48,8 +46,9 @@ public final class Solution {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col]) ||
-                        (direction == false   && col == seam[row])) {
+                if ((direction && row == seam[col])
+                    ||
+                        (!direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -57,14 +56,12 @@ public final class Solution {
             }
             StdOut.println();
         }
-        // StdOut.println();
         StdOut.printf("Total energy = %f\n", totalSeamEnergy);
         StdOut.println();
         StdOut.println();
     }
-
     /**
-     * Main function.
+     * { Client program }.
      *
      * @param      args  The arguments
      */
@@ -72,10 +69,6 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
-        if (!(scan.hasNext())) {
-            System.out.println("picture is null");
-            return;
-        }
         try {
             switch (cases) {
             case "width":
@@ -105,7 +98,8 @@ public final class Solution {
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
-                    System.out.println(Arrays.toString(seamCarver.findVerticalSeam()));
+                    System.out.println(
+                        Arrays.toString(seamCarver.findVerticalSeam()));
                 }
                 break;
 
@@ -113,7 +107,8 @@ public final class Solution {
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
-                    System.out.println(Arrays.toString(seamCarver.findHorizontalSeam()));
+                    System.out.println(
+                        Arrays.toString(seamCarver.findHorizontalSeam()));
                 }
                 break;
 
@@ -131,7 +126,8 @@ public final class Solution {
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
-                    seamCarver.removeHorizontalSeam(seamCarver.findHorizontalSeam());
+                    seamCarver.removeHorizontalSeam(
+                        seamCarver.findHorizontalSeam());
                     int[] horizontalSeam = seamCarver.findHorizontalSeam();
                     seamCarver.removeHorizontalSeam(horizontalSeam);
                     printSeam(seamCarver, horizontalSeam, true);
@@ -149,7 +145,6 @@ public final class Solution {
                     printEnergies("/Files/" + file);
                 }
                 break;
-
             default:
                 seamCarver = new SeamCarver(null);
                 break;
@@ -159,3 +154,6 @@ public final class Solution {
         }
     }
 }
+
+
+
