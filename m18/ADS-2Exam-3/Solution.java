@@ -16,11 +16,11 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         switch (cases) {
-        case "loadDictionary" :
+        case "loadDictionary":
             // input000.txt and output000.txt
             BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
@@ -28,7 +28,7 @@ public class Solution {
                 System.out.println(hash.get(key));
             }
             break;
-        case "getAllPrefixes" :
+        case "getAllPrefixes":
             // input001.txt and output001.txt
             T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
             while (scan.hasNextLine()) {
@@ -101,7 +101,7 @@ public class Solution {
      *
      * @return     {BinarySearchST object}.
      */
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] dict = toReadFile(file);
@@ -126,7 +126,7 @@ class T9 {
      *
      * @param      st    {object of BinarySearchST}.
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<>();
         for (String word : st.keys()) {
@@ -141,7 +141,7 @@ class T9 {
      *
      * @return     All words.
      */
-    public Iterable<String> getAllWords(String prefix) {
+    public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
@@ -152,7 +152,7 @@ class T9 {
      *
      * @return     {null type}.
      */
-    public Iterable<String> potentialWords(String t9Signature) {
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         int m = 0;
         while (m < 3) {
@@ -172,7 +172,7 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words, int k) {
         // your code goes here
         ArrayList<String> list = new ArrayList<String>();
         MaxPQ<Integer> max = new MaxPQ<>();
@@ -202,7 +202,7 @@ class T9 {
      *
      * @return     {returns to the fucntion getSuggestions()}.
      */
-    public Iterable<String> t9(String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature, int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
