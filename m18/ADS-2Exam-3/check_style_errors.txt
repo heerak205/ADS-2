@@ -1,9 +1,7 @@
 Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:7:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:14:29: Parameter args should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:16:23: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:20: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:80: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:88:39: Parameter file should be final. [FinalParameters]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:99:66: Parameter file should be final. [FinalParameters]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:100: Line is longer than 80 characters (found 84). [LineLength]
@@ -14,18 +12,15 @@ Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:118:18: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:124:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:124:15: Parameter st should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:131: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:139:41: Parameter prefix should be final. [FinalParameters]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:150:44: Parameter t9Signature should be final. [FinalParameters]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:153:20: '3' is a magic number. [MagicNumber]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:170:44: Parameter words should be final. [FinalParameters]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:170:68: Parameter k should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:181:25: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:190: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:201:32: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:201:52: Parameter k should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:200:32: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:200:52: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]

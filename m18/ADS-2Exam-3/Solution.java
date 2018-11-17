@@ -13,7 +13,7 @@ public class Solution {
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String cases =scan.nextLine();
+        String cases = scan.nextLine();
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
@@ -77,7 +77,7 @@ public class Solution {
             break;
         }
     }
-    // Don't modify this method.    
+    // Don't modify this method.
     /**
      * { function to read file}.
      *
@@ -128,7 +128,7 @@ class T9 {
             tst.put(word, st.get(word));
         }
     }
-    // get all the prefixes that match with given prefix.   
+    // get all the prefixes that match with given prefix.
     /**
      * Gets all words.
      *
@@ -178,7 +178,7 @@ class T9 {
         while (m < k) {
             int l = max.delMax();
             for (String each : words) {
-                if (l ==tst.get(each)) {
+                if (l == tst.get(each)) {
                     list.add(each);
                 }
             }
@@ -187,7 +187,6 @@ class T9 {
         Collections.sort(list);
         return list;
     }
-    
     // final output
     // Don't modify this method.
     /**
