@@ -20,7 +20,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         switch (cases) {
-        case "loadDictionary":
+        case "loadDictionary" :
             // input000.txt and output000.txt
             BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
@@ -28,7 +28,7 @@ public class Solution {
                 System.out.println(hash.get(key));
             }
             break;
-        case "getAllPrefixes":
+        case "getAllPrefixes" :
             // input001.txt and output001.txt
             T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
             while (scan.hasNextLine()) {
