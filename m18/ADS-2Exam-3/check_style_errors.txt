@@ -1,21 +1,17 @@
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:7: Class Solution should be declared as final. [FinalClass]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:25: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:93:39: Parameter file should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:104: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:105: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:110:33: ')' is preceded with whitespace. [ParenPad]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:111:28: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:111:42: ')' is preceded with whitespace. [ParenPad]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:123:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:123:18: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:129:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:158:20: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:175: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:175:74: Parameter k should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:205:58: Parameter k should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:104: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:106: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:112:15: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:112:32: ')' is preceded with whitespace. [ParenPad]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:125:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:125:18: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:131:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:160:20: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:177: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Solution.java:178:50: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m18/ADS-2Exam-3/Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]

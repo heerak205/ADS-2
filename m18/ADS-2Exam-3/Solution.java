@@ -4,7 +4,7 @@ import java.util.Collections;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -90,7 +90,7 @@ public class Solution {
      *
      * @return     {String type}.
      */
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -101,14 +101,16 @@ public class Solution {
      *
      * @return     {BinarySearchST object}.
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer> 
+    loadDictionary(final String file) {
+        BinarySearchST<String, Integer>  
+        st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] dict = toReadFile(file);
         for (int i = 0; i < dict.length; i++) {
             String word = dict[i].toLowerCase();
-            if (st.contains(word )) {
-                st.put(word , st.get(word ) + 1);
+            if(st.contains(word )) {
+                st.put(word, st.get(word) + 1);
             } else {
                 st.put(word, 1);
             }
@@ -172,7 +174,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, int k) {
+    public Iterable<String> 
+    getSuggestions(final Iterable<String> words, int k) {
         // your code goes here
         ArrayList<String> list = new ArrayList<String>();
         MaxPQ<Integer> max = new MaxPQ<>();
@@ -202,7 +205,7 @@ class T9 {
      *
      * @return     {returns to the fucntion getSuggestions()}.
      */
-    public Iterable<String> t9(final String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }

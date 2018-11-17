@@ -14521,8 +14521,8 @@ zoe
 zoom
 zyada
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:179)
-	at T9.t9(Solution.java:206)
+	at T9.getSuggestions(Solution.java:182)
+	at T9.t9(Solution.java:209)
 	at Solution.main(Solution.java:76)
 ----------------------------------------
 
