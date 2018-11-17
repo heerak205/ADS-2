@@ -5,6 +5,11 @@ import java.util.Collections;
  * Class for solution.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
     // Don't modify this method.
     /**
      * {main method that drives the program}.

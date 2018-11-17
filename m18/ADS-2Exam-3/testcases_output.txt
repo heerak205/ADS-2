@@ -7306,7 +7306,7 @@ zoe
 zoom
 zyada
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:42)
+	at Solution.main(Solution.java:47)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -14521,8 +14521,8 @@ zoe
 zoom
 zyada
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:174)
-	at T9.t9(Solution.java:201)
-	at Solution.main(Solution.java:71)
+	at T9.getSuggestions(Solution.java:179)
+	at T9.t9(Solution.java:206)
+	at Solution.main(Solution.java:76)
 ----------------------------------------
 
