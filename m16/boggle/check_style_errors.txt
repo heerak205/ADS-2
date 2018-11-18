@@ -1,45 +1,25 @@
 Starting audit...
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:11:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:11:25: Parameter dictionary should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:18: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:19:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:19:46: Parameter board should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37: Line is longer than 80 characters (found 120). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:26: Parameter board should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:45: Parameter row should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:54: Parameter col should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:63: Parameter visited should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:84: Parameter prefix should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:37:99: Parameter set should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:67: Line is longer than 80 characters (found 111). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:75: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:76: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:77:4: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:77:4: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:77:23: Parameter word should be final. [FinalParameters]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:78:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:78:38: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:78:60: '4' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:80:45: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:82:45: '6' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:83:32: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:84:45: '7' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:85:32: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:86:45: '8' is a magic number. [MagicNumber]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:87:32: '11' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:51:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:103:24: Parameter word should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:104:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:104:52: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:106:37: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:108:37: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:109:20: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:110:37: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:111:20: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:112:37: '8' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleSolver.java:113:20: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:5: Class Solution should be declared as final. [FinalClass]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:29: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/Solution.java:45: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...
@@ -767,6 +747,36 @@ Starting audit...
 Audit done.
 Checkstyle ends with 84 errors.
 Starting audit...
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:4:14: Name 'solver' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:4:20: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:12:24: Parameter word should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:13:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:13:52: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:15:37: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:17:37: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:18:20: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:19:37: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:20:20: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:21:37: '8' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/solver.java:22:20: '11' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 12 errors.
+Starting audit...
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:4:14: Name 'score' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:4:19: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:12:24: Parameter word should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:13:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:13:52: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:15:37: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:17:37: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:18:20: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:19:37: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:20:20: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:21:37: '8' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/score.java:22:20: '11' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 12 errors.
+Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleGame.java:8: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleGame.java:9: Line has trailing spaces. [RegexpSingleline]
@@ -1233,3 +1243,19 @@ Starting audit...
 [ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/BoggleGame.java:1002: Line is longer than 80 characters (found 107). [LineLength]
 Audit done.
 Checkstyle ends with 464 errors.
+Starting audit...
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:4:14: Name 'scoreOf' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:4:21: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:12:16: Method Name 'scoreOf' must not equal the enclosing class name. [MethodName]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:12:24: Parameter word should be final. [FinalParameters]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:13:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:13:52: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:15:37: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:17:37: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:18:20: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:19:37: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:20:20: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:21:37: '8' is a magic number. [MagicNumber]
+[ERROR] /Users/heerak/git/ADS-2/ADS-2/m16/boggle/scoreOf.java:22:20: '11' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 13 errors.

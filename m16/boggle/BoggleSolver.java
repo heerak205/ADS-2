@@ -8,15 +8,29 @@ public class BoggleSolver {
     // (You can assume each word in the dictionary
     // contains only the uppercase letters A through Z.)
     private TrieSET dict;
-    public BoggleSolver(String[] dictionary) {
+    /**
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
         dict = new TrieSET();
         for (String word : dictionary) {
             dict.add(word);
         }
     }
 
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    // Returns the set of all valid words in
+    // the given Boggle board, as an Iterable.
+
+    /**
+     * Gets all valid words.
+     *
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         if (board == null) {
             throw new NullPointerException("board is null");
         }
@@ -34,7 +48,9 @@ public class BoggleSolver {
         }
         return validWords;
     }
-    private void collect(BoggleBoard board, int row, int col, boolean[][] visited, String prefix, HashSet<String> set) {
+    private void collect(final BoggleBoard board, final int row,
+                         final int col, final boolean[][] visited,
+                         final String prefix, final HashSet<String> set) {
         if (visited[row][col]) {
             return;
         }
@@ -64,7 +80,8 @@ public class BoggleSolver {
                     continue;
                 }
 
-                if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
+                if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0)
+                        && (col + j < board.cols())) {
                     collect(board, row + i, col + j, visited, word, set);
                 }
             }
@@ -72,20 +89,29 @@ public class BoggleSolver {
 
         visited[row][col] = false;
     }
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
-   public int scoreOf(String word) {
-		if (word.length() == 3 || word.length() == 4) {
-			return 1;
-		} else if (word.length() == 5) {
-			return 2;
-		} else if (word.length() == 6) {
-			return 3;
-		} else if (word.length() == 7) {
-			return 5;
-		} else if (word.length() >= 8) {
-			return 11;
-		}
-		return 0;
-	}
+    // Returns the score of the given word if i
+    // t is in the dictionary, zero otherwise.
+    // (You can assume the word contains only
+    //  the uppercase letters A through Z.)
+    /**
+     * {to determine score}.
+     *
+     * @param      word  The word
+     *
+     * @return     {int}.
+     */
+    public int scoreOf(String word) {
+        if (word.length() == 3 || word.length() == 4) {
+            return 1;
+        } else if (word.length() == 5) {
+            return 2;
+        } else if (word.length() == 6) {
+            return 3;
+        } else if (word.length() == 7) {
+            return 5;
+        } else if (word.length() >= 8) {
+            return 11;
+        }
+        return 0;
+    }
 }
