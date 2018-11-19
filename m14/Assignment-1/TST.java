@@ -43,6 +43,7 @@ class TST<Value> {
      *
      * @return     the number of key-value pairs
      * in this symbol table
+     * Time complexity for size method is O(1).
      */
     public int size() {
         return n;
@@ -57,7 +58,8 @@ class TST<Value> {
      * table contains {@code key} and
      *             {@code false} otherwise
      * @throws     IllegalArgumentException
-     * if {@code key} is {@code null}
+     * if {@code key} is {@code null}.
+     * Time complexity of contains method is O(L + logN).
      */
     public boolean contains(final String key) {
         if (key == null) {
@@ -78,7 +80,8 @@ class TST<Value> {
      *             if the key is not in the symbol
      *             table
      * @throws     IllegalArgumentException
-     * if {@code key} is {@code null}
+     * if {@code key} is {@code null}.
+     * Time complexity for get method is O(L + logN).
      */
     public Value get(final String key) {
         if (key == null) {
@@ -103,9 +106,10 @@ class TST<Value> {
      * @param      d     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * Time complexity: O(L + logN).
      */
     private Node<Value> get(final Node<Value> x,
-        final String key, final int d) {
+                            final String key, final int d) {
         if (x == null) {
             return null;
         }
@@ -136,7 +140,8 @@ class TST<Value> {
      * @param      key   the key
      * @param      val   the value
      * @throws     IllegalArgumentException
-     * if {@code key} is {@code null}
+     * if {@code key} is {@code null}.
+     * Time complexity: O(L + logN).
      */
     public void put(final String key, final Value val) {
         if (key == null) {
@@ -152,15 +157,16 @@ class TST<Value> {
     /**
      * { function_description }.
      *
-     * @param      a     { parameter_description }
+     * @param      a     { parameter_description }.
      * @param      key   The key
      * @param      val   The value
-     * @param      d     { parameter_description }
+     * @param      d     { parameter_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
+     * Time Comlplexity: O(L + logN).
      */
     private Node<Value> put(final Node<Value> a,
-        final String key, final Value val, final int d) {
+                            final String key, final Value val, final int d) {
         Node<Value> x = a;
         char c = key.charAt(d);
         if (x == null) {
@@ -241,7 +247,8 @@ class TST<Value> {
      *
      * @return     all of the keys in the set that start with {@code prefix}, as
      *             an iterable
-     * @throws     IllegalArgumentException  if {@code prefix} is {@code null}
+     * @throws     IllegalArgumentException  if {@code prefix} is {@code null}.
+     * Time Complexity: O(L + logN).
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         if (prefix == null) {
@@ -265,9 +272,10 @@ class TST<Value> {
      * @param      x       { parameter_description }
      * @param      prefix  The prefix
      * @param      queue   The queue
+     * Time Complexity: O(L + logN).
      */
     private void collect(final Node<Value> x,
-        final StringBuilder prefix, final Queue<String> queue) {
+                         final StringBuilder prefix, final Queue<String> queue) {
         if (x == null) {
             return;
         }
@@ -305,10 +313,11 @@ class TST<Value> {
      * @param      i        { parameter_description }
      * @param      pattern  The pattern
      * @param      queue    The queue
+     * Time Complexity: O(L + logN).
      */
     private void collect(final Node<Value> x,
-        final StringBuilder prefix, final int i,
-        final String pattern, final Queue<String> queue) {
+                         final StringBuilder prefix, final int i,
+                         final String pattern, final Queue<String> queue) {
         if (x == null) {
             return;
         }
@@ -330,4 +339,3 @@ class TST<Value> {
         }
     }
 }
-
