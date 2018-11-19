@@ -275,7 +275,8 @@ class TST<Value> {
      * Time Complexity: O(L + logN).
      */
     private void collect(final Node<Value> x,
-                         final StringBuilder prefix, final Queue<String> queue) {
+                         final StringBuilder prefix,
+                          final Queue<String> queue) {
         if (x == null) {
             return;
         }
